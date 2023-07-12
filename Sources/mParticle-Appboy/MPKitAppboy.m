@@ -394,6 +394,8 @@ __weak static id<ABKURLDelegate> urlDelegate = nil;
         optionsDictionary[ABKURLDelegateKey] = (NSObject *)[MPKitAppboy urlDelegate];
     }
     
+    optionsDictionary[@"ABKInAppMessageHideStatusBarKey"] = @YES;
+    
     return optionsDictionary;
 }
 
